@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Inter Bold";
+  src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+:root {
+  /*colors*/
+  --clr-gray-700: #333333;
+  --clr-gray-800: #1f1f1f;
+  --clr-gray-900: #141414;
+  --clr-green: #c4f82a;
+  --clr-white: #ffffff;
+
+  /*font families*/
+  --ff-inter-bold: "Inter Bold", sans-serif;
+  --ff-inter-reg: "Inter Regular", sans-serif;
+  --ff-inter-reg-bold: "Inter Regular Bold", sans-serif;
+
+  /*font sizes*/
+  --fs-medium: 0.875rem; /*14px*/
+  --fs-large: 1.5rem; /*24px*/
+
+  /*Spacing*/
+  --spc-50: 0.25rem; /*4px*/
+  --spc-100: 0.5rem; /*8px*/
+  --spc-150: 0.75rem; /*12px*/
+  --spc-200: 1rem; /*16px*/
+  --spc-300: 1.5rem; /*24px*/
+  --spc-500: 2.5rem; /*40px*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-gray-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--clr-gray-800);
+  border-radius: 12px;
+  text-align: center;
+  padding: var(--spc-500);
+}
+
+.card img {
+  height: 90px;
+  width: 84px;
+  border-radius: 50%;
+  border: solid var(--clr-green) 1.5px;
+}
+
+.card h1 {
+  font-family: var(--ff-inter-bold);
+  color: var(--clr-white);
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-size: var(--fs-large);
+  margin: var(--spc-300) 0 var(--spc-50) 0;
+}
+
+.card h2 {
+  font-family: var(--ff-inter-reg-bold);
+  color: var(--clr-green);
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-size: var(--fs-medium);
+  margin: var(--spc-50) 0 var(--spc-300) 0;
+}
+
+.card p {
+  font-family: var(--ff-inter-reg);
+  color: var(--clr-white);
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-size: var(--fs-medium);
+  margin-bottom: var(--spc-300);
+}
+
+.card a {
+  display: block;
+  text-decoration: none;
+  background-color: var(--clr-gray-700);
+  font-family: var(--ff-inter-bold);
+  font-size: var(--fs-medium);
+  color: var(--clr-white);
+  height: 45px;
+  width: 304px;
+  padding: 12px;
+  margin-top: var(--spc-200);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.card a:hover {
+  background-color: var(--clr-green);
+  color: var(--clr-gray-700);
+}
