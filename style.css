@@ -108,3 +108,14 @@ body {
   background-color: var(--clr-green);
   color: var(--clr-gray-700);
 }
+
+@media (width <= 440px)  {
+  .card {
+    padding: var(--spc-300);
+  }
+
+  .card a {
+    width: 279px;
+
+  }
+}
